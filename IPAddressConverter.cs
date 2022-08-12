@@ -11,6 +11,11 @@ namespace System.Text.Json.Serialization.Converters
     /// </summary>
     public class IPAddressConverter : JsonConverter<IPAddress>
     {
+        /// <summary>
+        /// Initializes a new instance of the <see cref="IPAddressConverter"/> class.
+        /// </summary>
+        public IPAddressConverter() { }
+
         /// <inheritdoc/>
         public override IPAddress? Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options)
         {

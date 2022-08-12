@@ -11,6 +11,11 @@ namespace System.Text.Json.Serialization.Converters
     /// </summary>
     public class ComplexConverter : JsonConverter<Complex>
     {
+        /// <summary>
+        /// Initializes a new instance of the <see cref="ComplexConverter"/> class.
+        /// </summary>
+        public ComplexConverter() { }
+
         /// <inheritdoc/>
         public override Complex Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options)
         {

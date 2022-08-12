@@ -11,6 +11,11 @@ namespace System.Text.Json.Serialization.Converters
     /// </summary>
     public class CultureInfoConverter : JsonConverter<CultureInfo>
     {
+        /// <summary>
+        /// Initializes a new instance of the <see cref="CultureInfoConverter"/> class.
+        /// </summary>
+        public CultureInfoConverter() { }
+
         /// <inheritdoc/>
         public override CultureInfo? Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options)
         {
