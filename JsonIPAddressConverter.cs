@@ -1,20 +1,20 @@
-// IPAddressConverter.cs
+// JsonIPAddressConverter.cs
 // Copyright (c) 2021-2022 Ishan Pranav. All rights reserved.
 // Licensed under the MIT License.
 
 using System.Net;
 
-namespace System.Text.Json.Serialization.Converters
+namespace System.Text.Json.Serialization
 {
     /// <summary>
     /// Converts an <see cref="IPAddress"/> value to or from JSON.
     /// </summary>
-    public class IPAddressConverter : JsonConverter<IPAddress>
+    public class JsonIPAddressConverter : JsonConverter<IPAddress>
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="IPAddressConverter"/> class.
+        /// Initializes a new instance of the <see cref="JsonIPAddressConverter"/> class.
         /// </summary>
-        public IPAddressConverter() { }
+        public JsonIPAddressConverter() { }
 
         /// <inheritdoc/>
         public override IPAddress? Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options)
