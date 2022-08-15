@@ -1,20 +1,20 @@
-// CultureInfoConverter.cs
+// JsonCultureInfoConverter.cs
 // Copyright (c) 2021-2022 Ishan Pranav. All rights reserved.
 // Licensed under the MIT License.
 
 using System.Globalization;
 
-namespace System.Text.Json.Serialization.Converters
+namespace System.Text.Json.Serialization
 {
     /// <summary>
     /// Converts a <see cref="CultureInfo"/> value to or from JSON.
     /// </summary>
-    public class CultureInfoConverter : JsonConverter<CultureInfo>
+    public class JsonCultureInfoConverter : JsonConverter<CultureInfo>
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="CultureInfoConverter"/> class.
+        /// Initializes a new instance of the <see cref="JsonCultureInfoConverter"/> class.
         /// </summary>
-        public CultureInfoConverter() { }
+        public JsonCultureInfoConverter() { }
 
         /// <inheritdoc/>
         public override CultureInfo? Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options)
