@@ -4,17 +4,17 @@
 
 using System.Numerics;
 
-namespace System.Text.Json.Serialization.Converters
+namespace System.Text.Json.Serialization
 {
     /// <summary>
     /// Converts a <see cref="Complex"/> value to or from JSON.
     /// </summary>
-    public class ComplexConverter : JsonConverter<Complex>
+    public class JsonComplexConverter : JsonConverter<Complex>
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="ComplexConverter"/> class.
+        /// Initializes a new instance of the <see cref="JsonComplexConverter"/> class.
         /// </summary>
-        public ComplexConverter() { }
+        public JsonComplexConverter() { }
 
         /// <inheritdoc/>
         public override Complex Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options)
