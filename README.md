@@ -3,8 +3,6 @@ Although the new `System.Text.Json` APIs have robust serialization support for c
 ## Converters
 | Namespace | Type | Kind | Converter | Example |
 | --------- | ---- | ---- | --------- | ------- |
-| `System` | [`DateTimeOffset`](https://docs.microsoft.com/en-us/dotnet/api/system.datetimeoffset) | Struct | `JsonFixedDateTimeOffsetConverter` | `"2022-08-18 18:10:00"` |
-| `System` | [`TimeSpan`](https://docs.microsoft.com/en-us/dotnet/api/system.timespan) | Struct | `JsonStringTimeSpanConverter` | `"30min"` |
 | `System.Globalization` | [`CultureInfo`](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.cultureinfo) | Class | `JsonCultureInfoConverter` | `"en-US"` |
 | `System.Net` | [`IPAddress`](https://docs.microsoft.com/en-us/dotnet/api/system.net.ipaddress) | Class | `JsonIPAddressConverter` | `"127.0.0.1"` |
 | `System.Numerics` | [`Complex`](https://docs.microsoft.com/en-us/dotnet/api/system.numerics.complex) | Struct | `JsonComplexConverter` | `{ "Real": -0.7269, "Imaginary": 0.1889 }` |
