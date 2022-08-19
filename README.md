@@ -11,6 +11,7 @@ Although the new `System.Text.Json` APIs have robust serialization support for c
 | Adapter | Description |
 | ------- | ----------- |
 | `TypeConverterJsonConverterAdapter` | Adds support for the [`TypeConverterAttribute`](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.typeconverterattribute). Source: [dotnet/runtime #1761](https://github.com/dotnet/runtime/issues/1761).
+| `AlphaVantageDateTimeOffsetConverter` | Adds support for the date format used by the Alpha Vantage API (Eastern Time) |
 
 ## License
 This repository is licensed with the [MIT](LICENSE.txt) license.
