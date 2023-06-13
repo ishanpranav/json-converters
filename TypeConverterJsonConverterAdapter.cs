@@ -25,6 +25,7 @@
  SOFTWARE.
 */
 
+#nullable disable
 using System.ComponentModel;
 using System.Linq;
 using System.Reflection;
@@ -75,3 +76,4 @@ namespace System.Text.Json.Serialization
         }
     }
 }
+#nullable enable
