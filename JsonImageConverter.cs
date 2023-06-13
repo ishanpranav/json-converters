@@ -33,7 +33,7 @@ namespace System.Text.Json.Serialization
         {
             using MemoryStream output = new MemoryStream();
 
-            value.Save(output, ImageFormat.Bmp);
+            value.Save(output, ImageFormat.Png);
             writer.WriteBase64StringValue(output.ToArray());
         }
     }
