@@ -23,7 +23,7 @@ namespace System.Text.Json.Serialization
         {
             byte[] buffer = reader.GetBytesFromBase64();
 
-            using MemoryStream input = new MemoryStream(buffer);
+            MemoryStream input = new MemoryStream(buffer); // Bitmap is responsible for disposing the stream
 
             return Image.FromStream(input);
         }
