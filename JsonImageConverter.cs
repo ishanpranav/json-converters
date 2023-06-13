@@ -34,7 +34,6 @@ namespace System.Text.Json.Serialization
             using MemoryStream output = new MemoryStream();
 
             value.Save(output, ImageFormat.Bmp);
-
             writer.WriteBase64StringValue(output.ToArray());
         }
     }
