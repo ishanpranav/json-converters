@@ -25,10 +25,8 @@ namespace System.Text.Json.Serialization
             {
                 return null;
             }
-            else
-            {
-                return new CultureInfo(text);
-            }
+            
+            return new CultureInfo(text);
         }
 
         /// <inheritdoc/>
