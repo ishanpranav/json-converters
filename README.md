@@ -3,6 +3,7 @@ Although the new `System.Text.Json` APIs have robust serialization support for c
 ## Converters
 | Namespace | Type | Kind | Converter | Example |
 | --------- | ---- | ---- | --------- | ------- |
+| `System.Drawing` | [`Image`](https://docs.microsoft.com/en-us/dotnet/api/system.drawing.image) | Class | `JsonImageConverter` | |
 | `System.Globalization` | [`CultureInfo`](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.cultureinfo) | Class | `JsonCultureInfoConverter` | `"en-US"` |
 | `System.Net` | [`IPAddress`](https://docs.microsoft.com/en-us/dotnet/api/system.net.ipaddress) | Class | `JsonIPAddressConverter` | `"127.0.0.1"` |
 | `System.Numerics` | [`Complex`](https://docs.microsoft.com/en-us/dotnet/api/system.numerics.complex) | Struct | `JsonComplexConverter` | `{ "Real": -0.7269, "Imaginary": 0.1889 }` |
